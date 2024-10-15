@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+#td{
+    background-color: black;
+}
+/* Albums container styling */
+.topAlbums {
+    
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding: 20px 0;
+    gap: 20px;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.topAlbums::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Webkit browsers */
+}
+
+/* Card styling */
+.topCard {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.topCard:hover {
+    transform: scale(1.05);
+}
+
+/* Image styling */
+#topCardImg {
+    height: 180px;
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.topCard:hover #topCardImg {
+    transform: scale(1.1);
+}
+
+/* Inner card content */
+.topCardInnerDiv {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 0 0 12px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Button styling */
+.topCardInnerDiv button {
+    padding: 8px 16px;
+    background-color: #34C94B;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.topCardInnerDiv button:hover {
+    background-color: #28a745;
+}
+
+/* Text within the card */
+.topCardDiv p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #ddd;
+}
+
+/* Scrollable horizontal layout for cards */
+.topCardDiv {
+    height: auto;
+    width: 100%;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.topCardDiv:hover {
+    border-color: red;
+}
